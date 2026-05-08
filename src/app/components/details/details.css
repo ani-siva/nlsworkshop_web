@@ -1,0 +1,428 @@
+.details
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:30px;
+}
+
+
+.details-title
+{
+    padding:20px;
+    width:90%;
+}
+.details-title
+{
+    display:flex;
+    column-gap:20px;
+    align-items:center;
+    color:var(--crust);
+    font-size:22pt;
+    font-weight:600;
+    border-bottom:4px solid var(--mauve);
+}
+
+.details-title img
+{
+    width:45px;
+}
+
+
+h1
+{
+    margin: 30px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    row-gap:10px;
+}
+
+h1 img
+{
+    width:35px;
+}
+.speaker-list
+{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-content:space-around;
+    text-align:center;
+    width:70%;
+}
+
+.speaker
+{
+    flex-basis:50%;
+    flex-shrink:0;
+}
+
+.speaker h1
+{
+    font-size:19pt;
+}
+
+.speaker h2
+{
+    font-size:14pt;
+    margin-top:-30px;
+    margin-bottom:30px;
+}
+.speaker img
+{
+
+    width:125px;
+    height:115px;
+    background: linear-gradient(white,white) padding-box, linear-gradient(to right, var(--mauve),var(--peach)) border-box;
+    border-radius:50%;
+    border: 5px solid transparent;
+    object-fit:cover;
+
+}
+
+.hsep
+{
+
+        margin:1px;
+        height: 4px;
+        background: linear-gradient(135deg, var(--pink),var(--peach));
+        margin-top:2rem;
+        width:70%;
+}
+
+.schedule
+{
+    display:flex;
+    flex-direction:row;
+    width:80%;
+    justify-content:space-around;
+
+
+}
+
+.schedule  table
+{
+    width:35%;
+    height:100px;
+    border-collapse:collapse;
+}
+
+.schedule table caption
+{
+    font-size:23px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+
+table th > h1
+{
+    font-size:23px;
+}
+
+
+table td
+{
+    font-size:20px;
+    padding:10px;
+}
+
+#time
+{
+    text-align:left;
+    width:40%;
+    font-weight:700;
+    border-right:2px solid var(--crust);
+}
+
+#ses
+{
+    width:60%;
+    text-align:center;
+    text-decoration-line:underline;
+    text-decoration-thickness:4px;
+}
+table  tr
+{
+    border-bottom:2px solid var(--subtext1);
+}
+
+table tr:last-child 
+{
+    border-bottom:0px
+}
+
+.misc {
+/*    background: linear-gradient(45deg, #b7bdf8, #8aadf4); */
+    font-weight: 700;
+    text-decoration-color:var(--flamingo);
+}
+
+.break {
+    font-weight: 700;
+    text-decoration-color:var(--mauve);
+}
+.nith {
+    font-weight: 700;
+    text-decoration-color:var(--green);
+}
+
+.mur {
+    font-weight: 700;
+    text-decoration-color:var(--teal);
+}
+.ms {
+    font-weight: 700;
+    text-decoration-color:var(--red);
+}
+.dv{
+    font-weight: 700;
+    text-decoration-color:var(--lavender);
+}
+
+.info-sep
+{
+    margin:10px;
+    margin-top:30px;
+    width: 5px;
+    background: var(--crust);
+    margin-inline: 2.9rem;
+}
+
+
+.add-details
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:70%;
+    margin:40px;
+}
+
+.regis,.accom,.link
+{
+    display:flex;
+    flex-direction:column;
+    align-items:left;
+    flex-basis:33%;
+    justify-content:top;
+}
+
+.link
+{
+    align-items:center;
+}
+
+.regis > h1,.accom > h1,.link > h1
+{
+    display:flex;
+    flex-direction:row;
+    column-gap:10px;
+    justify-content:center;
+    text-align:center;
+    font-size:16pt;
+    width:80%;
+    padding:10px;
+    margin-bottom:-10px;
+    border-bottom:4px solid var(--teal);
+}
+
+.add-details > h1 > img
+{
+    width:35px;
+    
+}
+
+
+.add-details li
+{
+    font-size:15pt;
+    font-weight:500;
+    padding:10px;
+}
+
+.link > h1
+{
+    margin-bottom: 20px;
+}
+
+#pdf
+{
+    padding:10px;
+    border-radius:40px;
+    margin:10px 10px;
+    background: linear-gradient(105deg, var(--flamingo),var(--peach));
+    border: 2px solid var(--crust);
+    font-size:14pt;
+    transition:transform  0.5s, background-color 0.5s;
+}
+
+#pdf:hover
+{
+    transform:translateY(-5px); 
+    border:2px solid var(--crust);
+    background:var(--crust);
+    color:var(--text);
+    box-shadow: 0px 8px 9px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 8px 9px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 8px 9px -1px rgba(0,0,0,0.75);
+}
+
+#pdf-off
+{
+    padding:10px;
+    border-radius:40px;
+    margin:10px 10px;
+    border: 2px solid lightgray;
+    font-size:14pt;
+    background: lightgray;
+    color:gray;
+}
+
+
+
+@media only screen and (max-width:1250px)
+{
+    .details-title, h1, .add-details > h1
+    {
+        font-size:20pt;
+    }
+
+    .speaker h1
+    {
+        font-size:14pt;
+    }
+
+     .speaker h2 
+    {
+        font-size:11pt;
+    }
+
+    th  h1, .schedule caption
+    {
+        font-size:16pt;
+    }
+
+    table td
+    {
+        font-size:14pt;
+    }
+
+
+    .add-details li, #pdf
+    {
+        font-size:13pt;
+    }
+}
+
+@media only screen and (max-width:950px)
+{
+    .add-details
+    {
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .add-details li
+    {
+        list-style:disc;
+        text-align:left;
+    }
+}
+@media only screen and (max-width:750px)
+{
+    .speaker
+    {
+        flex-basis:50%;
+    }
+
+    .speaker img
+    {
+        width:85px;
+        height:85px;
+        border: 3px solid transparent;
+    }
+
+    th  h1, .schedule caption
+    {
+        font-size:13pt;
+    }
+
+    .speaker-list
+    {
+        align-items:center;
+        justify-content:center;
+    }
+    .add-details li, #pdf
+    {
+        font-size:12pt;
+    }
+    table td
+    {
+        font-size:10pt;
+        padding:1px;
+    }
+
+}
+
+@media only screen and (max-width:530px)
+{
+    .schedule
+    {
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+    }
+
+    .schedule table
+    {
+        width:80%;
+    }
+
+    
+   .info-sep
+   {
+       margin-top:30px;
+       margin-bottom:30px;
+       height: 2px;
+       width:40%;
+       background: var(--crust);
+   }
+    .speaker-list
+    {
+        justify-content:center;
+    }
+}
+
+@media only screen and (max-width:300px)
+{
+
+
+    .add-details
+    {
+        align-items:left;     
+    }
+
+    .accom,.regis,.link
+    {
+        align-items:center;
+    }
+
+    .accom > h1, .regis > h1, .link > h1
+    {
+        display:flex;
+        flex-direction:row;
+        width:40%;
+    }
+
+    
+    .add-details li
+    {
+        font-size:10pt;
+    }
+
+}

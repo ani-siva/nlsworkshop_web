@@ -1,0 +1,45 @@
+<header class="header" id="head">
+        <div class = "container-left">
+            <a href="index.html">
+                <img src="assets/logo.png"></a> 
+            <div class = "main-pill"> {{ title }} </div>
+        </div>
+        <div class = "container-right">
+            <a routerLink="/" fragment='head' (click)="scrollTo('head')" style="text-decoration:none; color:var(--crust)">
+                <div class = "sub-pill"> HOME </div>
+            </a>
+
+            <a routerLink="/about" fragment='about-anchor' (click)="scrollTo('about-anchor')" style="text-decoration:none; color:var(--crust)">
+                <div class = "sub-pill" > ABOUT </div>
+            </a>
+            <a routerLink="/about" fragment='about-anchor' (click)="scrollTo('detail-anchor')" style="text-decoration:none; color:var(--crust)">
+            <div class = "sub-pill"> DETAIlS </div> 
+            </a>
+            <a routerLink="/about" fragment='about-anchor' (click)="scrollTo('footer-anchor')" style="text-decoration:none; color:var(--crust)">
+            <div class = "sub-pill"> CONTACT </div> 
+            </a>
+
+            <a routerLink="/about" fragment='about-anchor' (click)="scrollTo('footer-anchor')" style="text-decoration:none; color:var(--crust)">
+            <div class = "sub-pill"> LINKS </div> 
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScZc5UiR0cAVAxDxl6RfyFn0HFpeIcxQYD3GjgD2-yKQ93nrg/viewform?usp=publish-editor" style="text-decoration:none; color:var(--crust)" target="_">
+            <div class = "sub-pill-reg"> Register </div>
+            </a>
+        </div>
+</header>
+
+
+<div class="details">
+    <div class = "info-box"> <h2>When?</h2> <img src="assets/calendar.svg">{{ date }} </div>
+    <div class = "info-sep"></div> 
+    
+    
+    <div class = "info-box" > <h2>Where?</h2> <img src="assets/compass.svg"> <a href="https://www.bdu.ac.in/maps-and-directions.php" style="text-decoration:none; color:var(--crust)" target="_"><div id="boost">{{ loc }}</div></a> </div>
+
+</div>
+
+<div class = "announcements" >
+    <!--        <nav> <h2> Registration deadline extended! </h2><h2> Deadline: 23/01/2026 </h2><h2> Selection Intimation (On or Before): 26/01/2026 </h2></nav> --> 
+    <nav> <h2> Tentative Schedule is now available! </h2></nav>
+</div>
+

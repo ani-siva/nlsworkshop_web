@@ -1,0 +1,76 @@
+ <header class = "about" id="about-anchor">
+    <div class = "about-title">
+        <img src="assets/about.svg">
+        About
+    </div>
+    <div class = "about-container">
+        <p [innerHTML]="confContent.replace(/(\n)/g,'<br>')"></p>
+        <img src="assets/nlsc-image.png">
+    </div>
+
+    <div class = "hsep"></div>
+
+    <div class = "about-bdu">
+        <!-- <div class = "bdu-info">
+            <img src="assets/about.svg">
+            <h1>About the University</h1>
+            <p [innerHTML]="bduContent.replace(/(\n)/g,'<br>')"></p>
+        </div> 
+        <div class = "info-sep"></div>-->
+        <div class = "bdu-info">
+            <img src="assets/university.svg">
+            <h1>About the Department</h1>
+            <p [innerHTML]="nldContent.replace(/(\n)/g,'<br>')"></p>
+        </div>
+        <div class = "info-sep"></div>
+        <div class = "bdu-res">
+            <img src="assets/res.svg">
+            <h1>Research Areas</h1>
+            <div class = "bdu-lists">
+                <ul>
+                    <li> Integrable Systems </li>
+                    <li> Chaos Theory</li>
+                    <li> Nonlinear Electronics</li>
+                    <li> Complex Systems </li>
+                    <li> Time Delay Systems </li>
+                </ul>
+                <ul>
+                    <li> Machine Learning </li>
+                    <li> PT-Symmetry </li>
+                    <li> Bose-Einstein Condensates </li>
+                    <li> Turbulence</li>
+                    <li> Mathematical Methods </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--   <div class = "about-bdu">
+        <div class = "bdu-img"><div class="overlay">About the Department</div></div>
+        <div class = "info-sep"></div> 
+        <div class = "bdu-info">          
+            <p [innerHTML]="bduContent.replace(/(\n)/g,'<br>')"></p>
+        </div>
+       <div class = "info-sep"></div> 
+        <div class = "bdu-info">
+            <ul>
+                <li> Integrable Systems </li>
+                <li> Chaos Theory and Bifurcations </li>
+                <li> Nonlinear Electronic Circuits </li>
+                <li> Complex Systems </li>
+                <li> Time Delay Systems </li>
+                <li> Machine Learning </li>
+                <li> Quantum Solvable Systems </li>
+                <li> Synchronization </li>
+                <li> PT-Symmetry </li>
+                <li> Bose-Einstein Condensates </li>
+                <li> Turbulence</li>
+                <li> Mathematical Methods </li>
+            </ul>
+        </div> 
+    </div> -->
+
+</header>
